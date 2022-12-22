@@ -20,4 +20,5 @@ docs.zip
 archive.zip
 test_main.http
 sqlitedb
+test_app
 *.db

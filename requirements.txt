@@ -3,7 +3,7 @@ pydantic>=1.8.0,<2.0.0
 uvicorn>=0.15.0,<0.16.0
 sqlalchemy==1.4.42
 passlib
-agron2_cffi = 18.2.0 
+agron2_cffi == 18.2.0 
 bcrypt
 python-jose[cryptography]
 pytest

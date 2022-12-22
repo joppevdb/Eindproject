@@ -24,6 +24,7 @@ origins = [
     "http://localhost:8080",
     "https://localhost.tiangolo.com",
     "http://127.0.0.1:5500",
+    "http://localhost:63342"
 
 ]
 
@@ -34,9 +35,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-
 
 
 def get_db():

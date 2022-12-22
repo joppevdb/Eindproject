@@ -23,7 +23,7 @@ class Beer(BeerBase):
 class BreweryBase(BaseModel):
     name: str
     address: str
-
+    owner_id: int
 
 class BreweryCreate(BreweryBase):
     pass

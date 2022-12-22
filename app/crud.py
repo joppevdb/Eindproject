@@ -29,7 +29,7 @@ def get_breweries(db: Session, skip: int = 0, limit: int = 20):
 
 
 def create_brewery(db: Session, brewery: schemas.BreweryCreate):
-    db_brewery = models.Brewery(name=brewery.name, address=brewery.address)
+    db_brewery = models.Brewery(name=brewery.name, address=brewery.address, owner_id=brewery.owner_id)
     db.add(db_brewery)
     db.commit()
     db.refresh(db_brewery)
@@ -39,6 +39,7 @@ def create_brewery(db: Session, brewery: schemas.BreweryCreate):
 # Bieren
 def get_beer(db: Session, beer_name: str):
     return db.query(models.Beer).filter(models.Beer.name == beer_name).first()
+
 
 def get_beer_by_id(db: Session, beer_id: int):
     return db.query(models.Beer).filter(models.Beer.id == beer_id).first()

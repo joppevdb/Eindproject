@@ -6,7 +6,8 @@ import requests
 # test posts
 def test_create_brewery():
     request_data = {"name": "Westmalle",
-                    "address": "Antwerpsesteenweg 496, 2390 Westmalle"}
+                    "address": "Antwerpsesteenweg 496, 2390 Westmalle",
+                    "owner_id": "1"}
 
     response = requests.post("http://127.0.0.1:8000/brewery/", json=request_data)
     if response.status_code == 200:

@@ -90,35 +90,58 @@ In de front-end worden alle get en post functies opgeroepen. De front-end word g
 
 Beer
 ![image](https://user-images.githubusercontent.com/71765408/209341540-a9ee1ab6-b78f-4dbe-9fd9-fea5c22699e4.png)
+![image](https://user-images.githubusercontent.com/71765408/209347871-54b8a962-e5d8-405f-b10c-182d13b6c8f2.png)
 ![image](https://user-images.githubusercontent.com/71765408/209341642-a4e421eb-7e6c-44e4-ad1f-8d61e4113685.png)
 ![image](https://user-images.githubusercontent.com/71765408/209341691-23dcb7af-de0d-4a59-b061-1775916df739.png)
 
-
 Brewery
+![image](https://user-images.githubusercontent.com/71765408/209349539-4d33a130-1b29-43d8-b076-3b9e72d657e3.png)
+![image](https://user-images.githubusercontent.com/71765408/209349695-3a717e7f-dad1-42e6-879b-6e12a7d8672e.png)
 
 Owner
-
+![image](https://user-images.githubusercontent.com/71765408/209349776-cd249510-ba97-441b-8e0f-30e3922bf00f.png)
 
 #test
 In de app zit ook een bestand genaamd test_app.py. Dit bestand gaat alle functies testen (get, post, delete). Omdat dit bestand gebruik maakt van vaste waarden gaan sommige test maar één keer kunnen uitgevoerd worden. Als u alle testen wilt uitvoeren moet u eerst de database verwijderen,
 
 screen:
+![image](https://user-images.githubusercontent.com/71765408/209358759-a29ee9a4-5728-4dd0-91e8-dc04e23ad326.png)
 
 # Postman screenshots
 # POSTS
 # POST beer
+![image](https://user-images.githubusercontent.com/71765408/209359424-88d047e2-1ac1-42fd-8725-e46e7a36b259.png)
 # POST brewery
+![image](https://user-images.githubusercontent.com/71765408/209359161-fb3da1b5-0e09-406e-880d-7aecd575749e.png)
 # POST owner
+![image](https://user-images.githubusercontent.com/71765408/209360348-14a8d5e9-dec2-4edf-9a21-3c95e815b328.png)
 # POST token
+![image](https://user-images.githubusercontent.com/71765408/209361181-d24c9396-5e34-445b-a806-7b95a0d31a09.png)
 # GETS
-# GET
-# GET
-# GET
-# GET
-# GET
-# GET
+# GET BREWERIES
+![image](https://user-images.githubusercontent.com/71765408/209361405-3575e592-130c-49d4-9278-dc760b709a5e.png)
+# GET BREWERY BY NAME
+![image](https://user-images.githubusercontent.com/71765408/209361620-f6e2abea-9027-49a8-ae86-3be6a370acb8.png)
+# GET BEERS
+![image](https://user-images.githubusercontent.com/71765408/209361331-50621e78-250e-477b-9152-09313f947807.png)
+# GET BEER BY NAME
+![image](https://user-images.githubusercontent.com/71765408/209361663-807e3973-d78f-4d2f-98a3-c4ac768c2f52.png)
+# GET BEERS WITH SPECIFIC TYPE
+![image](https://user-images.githubusercontent.com/71765408/209361961-cb663ea7-9888-4df4-b8e0-5ab3e3876cde.png)
+# GET BEERS MADE BY BREWERY
+![image](https://user-images.githubusercontent.com/71765408/209362105-a70d2ab4-ce98-4099-b215-6e61f23cf7cb.png)
 # DELETE
+# DELETE WITHOUT AUTH
+![image](https://user-images.githubusercontent.com/71765408/209362239-5de2b5fb-b5e4-4185-aec3-b75fd2e1c41d.png)
+# DELETE WITH AUTH
+![image](https://user-images.githubusercontent.com/71765408/209362492-7c793ed6-8101-4f03-8e6c-c76b65712865.png)
 # OpenAPI docs screenshots
+![image](https://user-images.githubusercontent.com/71765408/209362539-3e0666cf-a695-4a5b-abdc-2a152d8a3925.png)
+![image](https://user-images.githubusercontent.com/71765408/209362566-9888cdc4-0f0b-449a-967d-50f4d62420f4.png)
+![image](https://user-images.githubusercontent.com/71765408/209362649-c735a090-fc1c-42af-a403-d4f8c9fc2bda.png)
+![image](https://user-images.githubusercontent.com/71765408/209362696-ce347b1f-0324-41d2-ab44-868a38398d01.png)
+![image](https://user-images.githubusercontent.com/71765408/209362718-62d0b35c-9bd5-4f9c-831e-fc76ab28b962.png)
+![image](https://user-images.githubusercontent.com/71765408/209362749-ef63016e-607d-405c-a196-6f12155be4b1.png)
 # LINKS
 - Hosted API: https://beer-joppevdb.cloud.okteto.net
 - Front-end repo: https://github.com/joppevdb/frontend-eindproject

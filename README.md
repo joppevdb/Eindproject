@@ -8,7 +8,7 @@ Het gekozen is hetzelfde als bij de basisproject. Omdat ik persoonlijk het een i
 De API is complexer voor een overzicht te behouden is de API opgedeeld in drie onderdelen (bieren, brouwerijen, eigenaars). Per onderdeel wordt er een tabel aangemaakt in de database. Vervolgens wordt er per onderdeel een post aangemaakt zodat er snel gegevens toegevoegd kunnen worden. Tot slotte zijn er per onderdeel ook verschillende gets om de gegevens op te halen. Voor het onderdeel bieren is er ook een delete toegevoegd.
 
 # Models.py
-In dit bestand worden de verschillende tabellen opgesteld samen met hun relaties.
+In dit bestand wordt de lay-out van de verschillende tabellen opgesteld. Hieronder vind u de gegevens per tabel.
 
 Tabel Beers:
   - ID (int, primary key)
@@ -34,22 +34,20 @@ Relaties:
   - Een brouwerij kan meerdere bieren hebben. Maar een bier kan meer één brouwerij hebben.
 
 # schemas.py
-In dit bestand wordt opgegeven hoe een item voor een tabel gecreed kan worden.
+In dit bestand wordt opgegeven hoe een nieuw item kan gecreëerd worden voor een bepaalde tabel.
 
-Een opvallend gegeven bij owner wordt er een plain text password meegegeven. Dit word later pas omgezet naar een hashed password.
+Bij owner is er een opvallend gegeven er wordt gevraagd om een paswoord mee te geven. Maar het is een string dus een plain text paswoord. Dit paswoord wordt later omgezet naar een uniek gehashed paswoord.
 
 # crud.py
-In dit bestand worden de functies aangemaakt om gegevens toe te voegen (create), om gegevense op te vragen (read) en om gegevens te verwijderen (delete).
-
-Om gegevens toe te voegen moet eer een session worden gestart. Ook wordt er een schema meegegeven om het item aan te maken.
-Vervolgens wordt er een item toegevoegd volgens het model. Hierna wordt het item toegevoegd aan de database.
+In dit bestand worden de functies aangemaakt om gegevens toe te voegen (CREATE), op te vragen (READ) of te verwijderen (DELETE).
+Om gegevens toe te voegen wordt er eerst een session gestart. Samen met de session wordt er ook een schema gegeven van het bijpassend item. Vervolgens wordt er een model gemaakt van het item en dit wordt dan toegevoegd in de database
 
 Om gegevens op te vragen word er een query uitgevoerd met of zonder een filter.
 
-Om gegevens te verwijderen wordt er eerste een query gemaakt die de gegevens gaat opvragen. Vervolgens worden de gegevens verwijderd uit de database.
+Om gegevens te verwijderen uit de database wordt er eerst een query gemaakt die de gegevens gaat ophalen. De opgehaalde gegevens worden vervolgens verwijderd uit de database.
 
 # database.py
-Hier wordt de database gecreerd via een URL. Vervolgens wordt er een engine, een lokale sessie en een base aangemaakt.
+In dit bestand wordt de database gecreëerd via een URL. Vervolgens worden de nodige onderdelen aangemaakt: een engine, een lokale session, een base.
 
 # auth.py
 Dit bestand handelt alles af van passworden en authenticatie. Eerst worden de nodige libraries geimporteerd. Vervolgens worden de nodige varaibles aangemaakt.

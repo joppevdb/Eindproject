@@ -50,36 +50,36 @@ Om gegevens te verwijderen uit de database wordt er eerst een query gemaakt die 
 In dit bestand wordt de database gecreëerd via een URL. Vervolgens worden de nodige onderdelen aangemaakt: een engine, een lokale session, een base.
 
 # auth.py
-Dit bestand handelt alles af van passworden en authenticatie. Eerst worden de nodige libraries geimporteerd. Vervolgens worden de nodige varaibles aangemaakt.
-
+In dit bestand wordt alles afgehandeld van paswoorden en authenticatie. Eerst worden de nodig libraries geïmporteerd.  Hierna worden de nodige variabelen aangemaakt.
 def get_password_hash(password)
-  -Deze functie gaat het plain text password omzetten naar een gehashed password aan de hand van de hashing methodes.
+  - Het plain text paswoord dat eerder werd meegegeven bij het aanmaken van een nieuwe eigenaar wordt hier omgezet naar een gehashed paswoord.
   
 def verify_password(plain_password, hashed_password)
-  -Deze functie gaat vergelijken of dat het gegeven password overeen komt met gehashed password
+  - Het gegeven paswoord wordt vergeleken met de het gehashed paswoord.
 
 def authenticate_owner(db: Session, name: str, password:str)
-  - Eerst word er gezien of de naam in de database staat
-  - Hierna word het password gecontroleerd met de funcite die hierboven beschreven staat.
+  - Er wordt eerst gecontroleerd of de naam voorkomt in de database. Zo niet wordt de functie afgebroken.
+  - Hierna wordt het paswoord gecontroleerd met de functie die hierboven wordt beschreven.
 
 def create_acces_token(data:dict)
-  - expire date wordt bepaald aan de hand van een vooraf gedeclareerd variable
-  - Vervolgens wordt er een jwt key aangemaakt
- 
-# main.py
-Dit bestand is het hoofdprogramma hier worden alle delen in samen gebracht. De main bevat 4 post functies om de gegevens aan te maken. Ook bevat de main 6 get functies om de gegevens te kunnen opvragen.
+  - Expires data bepaald wanneer de token vervalt.
+  - Controle of expire data een waarde bevat.
+  - Tot slotte wordt de token gecreëerd en teruggeven.
 
-Overzicht van het bestand
-  -Alle nodige imports worden uitgevoerd.
-  -Controle op het bestaan van de map '.\sqlitedb'.
-  -De tabellen worden aangemaakt.
-  -De app wordt opgestart.
-  -Bearer wordt aangemaakt
-  -De nodige cors worden opgesteld. Er wordt ook voorzien dat de commands in een lokale omgeving kunnenn uitgevoerd worden.
-  -De database wordt getest
-  -De posts
-  -De gets
-  -De delete (enkel toegangkelijk met de nodig authenticatie)
+# main.py
+In dit bestand vindt zich het “hoofdprogramma” terug. Hieruit worden de verschillende delen gekoppeld. De main.py bevat de vier post functies die nodig zijn om items te kunnen creëren. Ook bevat de main.py zes get functies om deze gegevens op te halen. Tot slotte is er nog een delete om een specifiek bier te kunnen verwijderen.
+Overzicht van het bestand:
+  - Alle nodige imports worden uitgevoerd.
+  - Controle op het bestaan van de map '.\sqlitedb'.
+  - De tabellen worden aangemaakt.
+  - De app wordt opgestart.
+  - Bearer wordt aangemaakt
+  - De nodige CORS worden opgesteld. Er wordt ook voorzien dat de commando’s kunnen worden uitgevoerd in een lokale omgeving. Maar ook dat er commando’s kunnen worden uitgevoerd vanuit de gehoste site.
+  -De database connectie wordt getest.
+  -De post functies
+  -De get functies
+  -De delete functie (enkel toegangkelijk met de nodig authenticatie)
+
 
 # Extra's
 Hier onder vindt u alle extra's die in het project zitten.

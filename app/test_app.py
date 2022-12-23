@@ -77,7 +77,7 @@ def test_get_beers():
 
 
 def test_get_beer():
-    response = requests.get("http://127.0.0.1:8000/beer/{naam}?name=Westmalle%20triple")
+    response = requests.get("http://127.0.0.1:8000/beer/{name}?name=Westmalle%20triple")
     assert response.status_code == 200
 
 

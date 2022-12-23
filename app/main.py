@@ -101,7 +101,7 @@ def get_beers(skip: int = 0, limit: int = 20, db: Session = Depends(get_db)):
     return crud.get_beers(db, skip=skip, limit=limit)
 
 
-@app.get("/beer/{naam}", response_model=schemas.Beer)
+@app.get("/beer/{name}", response_model=schemas.Beer)
 def get_beer(name: str, db: Session = Depends(get_db)):
     db_beer = crud.get_beer(db, beer_name=name)
     if db_beer is None:

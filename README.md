@@ -89,19 +89,22 @@ Hier onder vindt u alle extra's die in het project zitten.
 In de front-end worden alle get en post functies opgeroepen. De front-end word gemaakt op basis van alpine. Bovenaan bevindt zich een navigatie menu waar u mee kan navigeren naar de verschillende onderdelen (beer, brewery, owner). Bij elk onderdeel vindt u de bijhorende get en post functies.
 
 Beer
+
 ![image](https://user-images.githubusercontent.com/71765408/209341540-a9ee1ab6-b78f-4dbe-9fd9-fea5c22699e4.png)
 ![image](https://user-images.githubusercontent.com/71765408/209347871-54b8a962-e5d8-405f-b10c-182d13b6c8f2.png)
 ![image](https://user-images.githubusercontent.com/71765408/209341642-a4e421eb-7e6c-44e4-ad1f-8d61e4113685.png)
 ![image](https://user-images.githubusercontent.com/71765408/209341691-23dcb7af-de0d-4a59-b061-1775916df739.png)
 
 Brewery
+
 ![image](https://user-images.githubusercontent.com/71765408/209349539-4d33a130-1b29-43d8-b076-3b9e72d657e3.png)
 ![image](https://user-images.githubusercontent.com/71765408/209349695-3a717e7f-dad1-42e6-879b-6e12a7d8672e.png)
 
 Owner
+
 ![image](https://user-images.githubusercontent.com/71765408/209349776-cd249510-ba97-441b-8e0f-30e3922bf00f.png)
 
-#test
+# test_app.py
 In de app zit ook een bestand genaamd test_app.py. Dit bestand gaat alle functies testen (get, post, delete). Omdat dit bestand gebruik maakt van vaste waarden gaan sommige test maar één keer kunnen uitgevoerd worden. Als u alle testen wilt uitvoeren moet u eerst de database verwijderen,
 
 screen:

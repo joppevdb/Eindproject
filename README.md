@@ -89,6 +89,10 @@ Hier onder vindt u alle extra's die in het project zitten.
 In de front-end worden alle get en post functies opgeroepen. De front-end word gemaakt op basis van alpine. Bovenaan bevindt zich een navigatie menu waar u mee kan navigeren naar de verschillende onderdelen (beer, brewery, owner). Bij elk onderdeel vindt u de bijhorende get en post functies.
 
 Beer
+![image](https://user-images.githubusercontent.com/71765408/209341540-a9ee1ab6-b78f-4dbe-9fd9-fea5c22699e4.png)
+![image](https://user-images.githubusercontent.com/71765408/209341642-a4e421eb-7e6c-44e4-ad1f-8d61e4113685.png)
+![image](https://user-images.githubusercontent.com/71765408/209341691-23dcb7af-de0d-4a59-b061-1775916df739.png)
+
 
 Brewery
 

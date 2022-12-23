@@ -16,7 +16,7 @@ class Brewery(Base):
 
 
 class Beer(Base):
-    __tablename__ = "bieren"
+    __tablename__ = "beers"
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     volume = Column(Float)

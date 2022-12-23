@@ -116,6 +116,10 @@ screen:
 # DELETE
 # OpenAPI docs screenshots
 # LINKS
+- Hosted API: https://beer-joppevdb.cloud.okteto.net
+- Front-end repo: https://github.com/joppevdb/frontend-eindproject
+- Hosted front-end: https://eindproject.netlify.app/
+- Repo basisproject: https://github.com/joppevdb/basisproject
 
 
 

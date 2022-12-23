@@ -1,11 +1,11 @@
 # Eindproject
-Voor het tweede en laatste deel van het project moest er een API gemaakt worden die verbonden was aan een databank. De API moet volledig automatisch worden opgebouwd door github actions. Tot slotten moet de API gehost worden op Okteto.
+Voor het eindproject van het vak API development wordt er gevraagd om een API te maken die verbonden is met een databank (SQL). Deze API moet volledig automatisch worden opgebouwd  met GitHub actions. Hierna wordt de API gehost op Okteto en gekoppeld aan een front-end dat gehost wordt op Netlify.
 
 # Thema
-Ik heb besloten om verder te bouwen op mijn vorige API. Omdat ik het een intressant thema vond. Het gekozen thema is bieren. De API is gebouwt rond het bijhouden van de geproduceerde bieren per brouwerij.
+Het gekozen is hetzelfde als bij de basisproject. Omdat ik persoonlijk het een interessant thema vind. Het gekozen thema is bier. De API is gebouwd rond het bijhouden van welke brouwerij heeft welke bieren gebrouwen. 
 
 # API
-De API is complexer er zijn drie hoofdonderdelen (bieren, brouwerijen, eigenaars). Per onderdeel is een tabel aangemaakt. Hierna is er ook een post per onderdeel aangemaakt zodat er snel gegevens kunnen toegevoegd worden. Tot slotte zijn er ook verschillende gets aangemaakt om gegevens op te vragen.
+De API is complexer voor een overzicht te behouden is de API opgedeeld in drie onderdelen (bieren, brouwerijen, eigenaars). Per onderdeel wordt er een tabel aangemaakt in de database. Vervolgens wordt er per onderdeel een post aangemaakt zodat er snel gegevens toegevoegd kunnen worden. Tot slotte zijn er per onderdeel ook verschillende gets om de gegevens op te halen. Voor het onderdeel bieren is er ook een delete toegevoegd.
 
 # Models.py
 In dit bestand worden de verschillende tabellen opgesteld samen met hun relaties.

@@ -75,10 +75,10 @@ Overzicht van het bestand:
   - De app wordt opgestart.
   - Bearer wordt aangemaakt
   - De nodige CORS worden opgesteld. Er wordt ook voorzien dat de commando’s kunnen worden uitgevoerd in een lokale omgeving. Maar ook dat er commando’s kunnen worden uitgevoerd vanuit de gehoste site.
-  -De database connectie wordt getest.
-  -De post functies
-  -De get functies
-  -De delete functie (enkel toegangkelijk met de nodig authenticatie)
+  - De database connectie wordt getest.
+  - De post functies
+  - De get functies
+  - De delete functie (enkel toegangkelijk met de nodig authenticatie)
 
 
 # Extra's

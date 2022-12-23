@@ -78,13 +78,18 @@ Overzicht van het bestand:
   - De database connectie wordt getest.
   - De post functies
   - De get functies
-  - De delete functie (enkel toegangkelijk met de nodig authenticatie)
+  - De delete functie (enkel toegankelijk  met de nodig authenticatie)
 
 
 # Extra's
-Hier onder vindt u alle extra's die in het project zitten.
+Hieronder bevinden zich alle extra’s die toegevoegd zijn aan het project.
+
+De nummers van de extra’s:
+  - 2.1,  2.1.1
+  - 3.1, 3.1.1, 3.1.2
+
 # Front-end
-In de front-end worden alle get en post functies opgeroepen. De front-end word gemaakt op basis van alpine. Bovenaan bevindt zich een navigatie menu waar u mee kan navigeren naar de verschillende onderdelen (beer, brewery, owner). Bij elk onderdeel vindt u de bijhorende get en post functies.
+In de front-end worden alle get en post functies opgeroepen. Om een duidelijk overzicht te behouden is er een navigatie voorzien. Met deze navigatie kan u naar de verschillende onderdelen gaan. Bij elke onderdeel vindt u de bijhorende get en post functies.
 
 Beer
 
@@ -103,7 +108,7 @@ Owner
 ![image](https://user-images.githubusercontent.com/71765408/209349776-cd249510-ba97-441b-8e0f-30e3922bf00f.png)
 
 # test_app.py
-In de app zit ook een bestand genaamd test_app.py. Dit bestand gaat alle functies testen (get, post, delete). Omdat dit bestand gebruik maakt van vaste waarden gaan sommige test maar één keer kunnen uitgevoerd worden. Als u alle testen wilt uitvoeren moet u eerst de database verwijderen,
+In de map app zit ook een python bestand genaamd test_app.py. Dit bestand wordt gebruikt om alle functies te testen. Omdat dit bestand gebruik maakt van vaste waarden kunnen sommige testen maar eenmalig worden uitgevoerd . Wanneer u deze testen toch wilt uitvoeren zal u de gegevens moeten aanpassen of verwijderen uit de database.
 
 screen:
 ![image](https://user-images.githubusercontent.com/71765408/209358759-a29ee9a4-5728-4dd0-91e8-dc04e23ad326.png)
